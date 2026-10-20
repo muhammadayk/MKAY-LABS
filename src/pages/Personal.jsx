@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Nav, Marquee, Orb, Footer, BRAND_URL, X_URL } from '../components/Shared'
+import { Nav, Marquee, Orb, Footer, TGCard, BRAND_URL, X_URL } from '../components/Shared'
 
 // Edit these: this is your proof of work.
 const work = [
@@ -37,7 +37,7 @@ export default function Personal() {
     <div className="page">
       <div className="glow g1" /><div className="glow g2" />
       <Nav
-        links={[{ href: '#work', label: 'Work' }, { href: '#skills', label: 'Skills' }, { href: '#connect', label: 'Connect' }, { href: BRAND_URL, label: 'MKAY Labs' }]}
+        links={[{ href: '#work', label: 'Work' }, { href: '#skills', label: 'Skills' }, { href: '#community', label: 'Community' }, { href: '#connect', label: 'Connect' }, { href: BRAND_URL, label: 'MKAY Labs' }]}
         cta={{ href: X_URL, label: 'Follow ᗰᛕᗩƳ' }}
       />
 
@@ -83,6 +83,11 @@ export default function Personal() {
             </div>
           ))}
         </div>
+      </section>
+
+      <section className="wrap" id="community">
+        <h2>Join the community</h2>
+        <TGCard />
       </section>
 
       <section className="wrap" id="connect">
